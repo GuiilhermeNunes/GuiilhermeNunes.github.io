@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<HTML lang="pt" >
+
+    <HEAD>
+        <TITLE> 
+          Raimundo Nunes Oficina Auto
+        </TITLE>
+
+        <!-- ligação para a página de formatação em css -->
+        <link rel="stylesheet" type="text/css" href="index.css"> 
+
+            <!--Código para as hiperligações aparecerem a branco e não a roxo-->
+            <style type="text/css">
+		        A:link { color: white; text-decoration:none}
+		        A:visited {color: white; text-decoration: none}
+		        A:hover {color: #EFF5F5; text-decoration: none}
+		        A:active {text-decoration: none;}
+		        body {
+			        margin-left: 0px;
+			        margin-top: 0px;
+			        margin-right: 0px;
+			        margin-bottom: 0px;
+		        }
+            </style>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    </HEAD>
+
+    <BODY>
+        <!-- BARRA DE MENU -->
+        <div class="barra">
+
+          <div class="Informacoes">
+              <BR>
+              <a>⌚ Seg. a Sáb. 9h30 - 19.00</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a> ✆ 966 740 657</a>    
+          </div>
+
+          <div class="Logo">
+              <a href="PAP.html"><img src="logo.jpg" width=200px></a>
+          </div>
+       
+          <div class="Navg Menu">
+              <BR>
+              <a href="PAP.html">Inicio</a>
+              <a href="about.html">Quem Somos</a>
+              <a href="works.html">Trabalhos</a>
+              <a href="contact.html">Contactos</a>
+          </div>
+          
+          <hr class="Linha" style="height:4px; border:none; color:red; background-color:Red; margin-top:5px; position: relative;"/>
+      </div>
+
+    <!-- TRANSIÇÃO FADE PARA AS IMAGENS -->
+      
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+    </style>
+       
+      <br>
+      
+    <div class="slideshow-container" align="center">
+        
+        <div class="mySlides fade">
+          <img src="i1.jpg" style="width:90%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="i2.jpg" style="width:90%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="i3.jpg" style="width:90%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="i4.jpg" style="width:90%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="i5.jpg" style="width:90%">
+        </div>
+        
+    </div>
+
+        <br>
+        
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+        
+    <script>
+        var slideIndex = 0;
+        showSlides(slideIndex);
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+        <br>
+
+        <!-- div da tabela vermelha -->
+        <div class="tabela" style="text-align: center;">
+            <table class="tabela" width="100%" bgcolor="e61919" align="center">
+
+                <tr><td>  <P class="BIGtitle"><b>Chapa</b</P> </td>   <td><!-- coluna para a tabela não desformatar --></td>   <td class="cel1"> <P class="BIGtitle"><b>Pintura</b></P> </td></td></tr>
+                <tr><td> <br>As oficinas Raimundo Nunes trabalham com quaisquer problemas de chapa, desde <br> pequenas moças a grandes batidas. <br><br> </td>  
+                    <td> <hr size="80" width="1" color="grey" align="center"> </td> <!-- coluna para a linha divisoria -->
+                    <td> Quer pintar o seu veículo automóvel? <br> Dirija-se às nossas oficinas e peça um orçamento. </td>
+                </tr>
+        
+            </table>
+        </div>
+
+            <BR>
+            <BR>
+            <BR>
+            <BR>
+            <BR>
+            
+       <!-- div da tabela branca -->
+       <div class="tabela2" style="text-align: center;">
+        <table class="tabela2" width="80%" bgcolor="white" align="center">
+
+            <tr height="40px"><td></td></tr>
+            <tr><td> <b><h2>SEJA BEM-VINDO</h2></b> </td> 
+              
+              <div class="btns">
+                <td class="cel2" rowspan="2"> <button type="button" class="efeito efeito-1"> <a href="orç.html"><b><h3>AGENDE O SEU ORÇAMENTO</h3></b></a> </button> </td></tr>
+              </div>
+
+            <tr><td> Seja bem vindo ao website informativo das oficinas <BR> especializadas Raimundo Nunes. </td></tr> 
+            <tr height="40px"><td></td></tr>
+    
+        </table>
+    </div>
+
+          <BR>
+          <BR>
+          <BR>
+          <BR>
+          <BR>
+
+        <!-- Tabela Cinzenta -->
+        <TABLE class="tabela3" border="0" width="100%" bgcolor="#f0f0f0" align="center">
+            <tr><td colspan="3"> <br><br><br> <h2><b>PORQUE OFERECEMOS A MELHOR <br> SOLUÇÃO PARA O SEU VEÍCULO?</b></h2> <br> </td></tr>
+
+            <tr><td colspan="3"> <br> As oficinas Raimundo Nunes Oficina Auto são oficinas especializadas em chapa e pintura de automóveis que só trabalha com grandes marcas, <br> por isso oferecemos ao seu veículo o melhor tratamento do mercado.<br><br> </td></tr>
+
+            <tr><td width="33%"> <p style="font-size:35px">&#8364;</p></td>  <td width="33%"><p style="font-size:35px">&#128663;</p></td> <td width="33%"><p style="font-size:40px">&#9734;</p></td></tr>
+
+            <tr><td width="33%"> <B>PREÇO QUE CABE NO SEU BOLSO</B> </td> <td width="33%"> <B>ESTAMOS SEMPRE PERTO DE VOCÊ</B> </td> <td width="33%"> <B>PROFISSIONAIS <br> QUALIFICADOS</B> </td></tr>
+            <tr><td width="33%"> <br> As oficinas Raimundo Nunes detêm os <br> melhores preços do ramo automóvel <br><br></td> <td width="33%"> Necessita de arranjar o seu carro? <br> solicite o seu orçamento que será <br> marcado o mais depressa possível </td> 
+                <td width="33%"> Os nossos profissionais são <br> qualificados o que trás um <br> serviço excelente e rápido </td>
+            </tr> 
+
+            <tr><td colspan="3"> <br><br><br><br> </td></tr> 
+          </TABLE>
+        
+        <!-- Tabela das Marcas -->
+
+        <TABLE width="100%" bgcolor="#ffffff" align="center" style="text-align: center;">
+            <tr><td> <br><br><br><br><br> <h2>CONHEÇA AS MARCAS QUE GARANTEM A <br> NOSSA ALTÍSSIMA QUALIDADE</h2> </td></tr>
+            <tr> </tr>
+        </TABLE>
+
+        <BR>
+        <BR>
+
+       <!-- <div class="marcas" align="center"> -->
+        <TABLE border="0" align="center" width="100%"> 
+          <TR>
+            <TD align="center">
+              <div class="bloco">
+                <a href="http://www.imporlux.pt" target="_blank"> <img src="Imporlux.jpg" style="width:150px" title="Imporlux"> </a>
+              </div>
+            </TD>
+
+            <TD align="center">
+              <div class="bloco">
+                <a href="https://www.facebook.com/PPLCar" target="_blank"> <img src="PPLCAR.jpg" style="width:90px" title="PPL CAR"> </a>
+              </div>
+            </TD>
+
+            <TD></TD>
+
+            <TD align="center">
+              <div class="bloco">
+                <a href="http://www.santarepair.pt" target="_blank"> <img src="Santarepair.jpg" style="width:100px" title="Santarepair"> </a>
+              </div>
+            </TD>
+
+            <TD></TD>
+
+            <TD align="center">
+              <div class="bloco">
+                <a href="https://www.facebook.com/vitoresantoslda/" target="_blank"> <img src="VitoreSantos.png"  style="width:100px" title="Vitor & Santos, Lda"> </a>
+              </div>
+            </TD>
+
+            <TD></TD>
+
+            <TD align="center">
+              <div class="bloco">
+                <a href="http://www.3rparts.pt" target="_blank"> <img src="3rparts.jpg" style="width:90px" title="3R Parts"> </a>
+              </div>
+            </TD>
+          </TR>
+        </TABLE> 
+
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+
+        <TABLE class="table4" width="100%" align="center" BGCOLOR="e61919">
+            
+            <TR>
+                <TD> <P class="whitetitle" style="font-size:20px" align="right"> &nbsp;&nbsp;&nbsp;&nbsp; &#9743; &nbsp; NOSSO TELEFONE  &nbsp;&nbsp;&nbsp;&nbsp;</P> <P class="info" style="font-size:13px" align="right"> Telm. 964 386 861 | Telf. 243 306 861  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P> </TD>
+                <TD> <hr size="70" width="1" color="grey" align="center"> </TD>
+                <TD> <P class="whitetitle" style="font-size:20px" align="center"> &nbsp;&nbsp;&nbsp;&nbsp; &#9993; &nbsp; NOSSO EMAIL </P> <P class="info" style="font-size:13px" align="center"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; raimundonunes@hotmail.com </P> </TD>
+                <TD> <hr size="70" width="1" color="grey" align="center"> </TD>
+                <TD> <P class="whitetitle" style="font-size:20px" align="left"> &nbsp;&nbsp;&nbsp;&nbsp; &#9201; &nbsp; NOSSOS HORÁRIOS </P> <P class="info" style="font-size:13px" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Segunda a Sexta, das 09:00 às 19:00 </P> </TD>
+            </TR>
+                
+        </TABLE> 
+        
+        <TABLE class="table5" width="100%" align="center" BGCOLOR="#353232">
+            <TR height="180">
+                <TD width="490px"> <P style="font-size:20px" align=" right"> VOLTE SEMPRE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P><P style="font-size:13px" align=" right"> Esperemos que tenha gostado dos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> nossos serviços e que volte em breve. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P></TD>
+                <TD> <P style="font-size:20px" align="center">  &nbsp;&nbsp;&nbsp; NOSSOS SERVIÇOS </P><P style="font-size:13px" align="center"> - Chapa <BR> - Pintura</P> </TD>
+                <TD width="473px"> <P style="font-size:20px">  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;ENCONTRE-NOS </P><P style="font-size:13px"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Estamos localizados na <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rua Joáo Moreira de Almeida, <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lote A-Zona Industrial de Santarém <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2005-002 Várzea </P></TD>
+             </TR>
+        </TABLE>
+                
+        <TABLE class="table6" BGCOLOR="#1C1C1C" width="100%" align="center">
+            <TR> <TD> <P align="center"> ⓒ 2020 Raimundo Nunes Oficina Auto | Orgulhosamente criado por Guilherme Nunes </P> </TD> </TR>
+        </TABLE>
+
+    </BODY>
+</HTML> 
